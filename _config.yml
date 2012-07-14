@@ -2,10 +2,10 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://macrov.github.com
+title: Macrov Gao Blog
+subtitle: 我本狷狂.
+author: Macrov Gao
 simple_search: http://google.com/search
 description:
 
@@ -19,7 +19,7 @@ date_format: "ordinal"
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email:
+email: macrov.gao@gmail.com
 
 # ----------------------- #
 #    Jekyll & Plugins     #

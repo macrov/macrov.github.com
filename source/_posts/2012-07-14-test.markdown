@@ -1,0 +1,20 @@
+---
+layout: post
+title: "HelloWorld!!!"
+date: 2012-07-14 01:01
+comments: true
+categories: 
+---
+
+
+*My First Blog On This Web*
+
+``` c HelloWorld
+int main()
+{
+	
+	printf("HelloWorld!!!");
+	return 0;
+
+}
+```
