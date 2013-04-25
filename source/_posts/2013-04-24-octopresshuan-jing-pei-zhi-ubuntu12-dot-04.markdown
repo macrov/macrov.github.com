@@ -125,15 +125,24 @@ rake deploy
 
 github pages会使用master分支中的文件当作网站内容，然后octopress是工作在source分支，你的文章和部署的主题都保存在source文件夹，这些东西要保存好，以便以后多个设备编辑或者换环境。不参与octopress开发就直接保存在source分支然后一起push到github。
 
+不保存好原稿你以后可能会很痛苦，所以这部一定要做。
+（我就是中间段了好久，工作也换了，电脑环境也没有了，因为没有保存原稿，想重新开始写就要费很大力气把以前的文章从html再导成markdown，最后我放弃，然后以前的文章就都没了。）
+
 ```
-git remote add github git@github.com/your_username/your_username.github.com
 git add .
 git commit -m "init commit"
-git fetch github
-git checkout --track github/source
-git merge master
-git push github
+git push 
 ```
 
 
 ####5.维护已经存在的octopress
+
+clone你之前的github pages仓库
+```
+git clone git@github/your_username/your_username.github.com
+cd your_username.github.com
+git checkout source
+bash //加载rvm
+```
+然后就可以重新rake new_post, rake generate, rake deploy了。（前提是你有按照环境保存把原稿都加到仓库里）
+
