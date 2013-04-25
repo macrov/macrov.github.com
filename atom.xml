@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://macrov.github.io/atom.xml" rel="self"/>
   <link href="http://macrov.github.io/"/>
-  <updated>2013-04-24T22:12:01-07:00</updated>
+  <updated>2013-04-24T22:15:24-07:00</updated>
   <id>http://macrov.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -204,10 +204,12 @@
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
+<span class='line-number'>5</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>git clone git@github/your_username/your_username.github.com
 </span><span class='line'>cd your_username.github.com
 </span><span class='line'>git checkout source
-</span><span class='line'>bash //加载rvm</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>bash //加载rvm
+</span><span class='line'>rake setup_github_pages</span></code></pre></td></tr></table></div></figure>
 
 
 <p>然后就可以重新rake new_post, rake generate, rake deploy了。（前提是你有按照环境保存把原稿都加到仓库里）</p>
