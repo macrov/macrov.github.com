@@ -1,98 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Bitcoin论文中文版 - Macrov's Blog</title>
-  <meta name="author" content="Macrov Gao">
-
-  
-  <meta name="description" content="Bitcoin:A Peer-to-Peer Electronic Cash System 比特币:一个基于点对点技术的电子货币系统 Satoshi Nakamoto satoshin@gmx.com www.bitcoin.org 翻译:Macrov Abstract.A purely peer &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://macrov.github.io/blog/2013/04/04/bitcoinlun-wen-zhong-wen-ban">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Macrov's Blog" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">Macrov's Blog</a></h1>
-  
-    <h2>just for writting</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:macrov.github.io" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-  <li><a href="/about">About Me</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div>
-<article class="hentry" role="article">
-  
-  <header>
+  <title><![CDATA[Category: Bitcoin | Macrov's Blog]]></title>
+  <link href="http://macrov.github.io/blog/categories/bitcoin/atom.xml" rel="self"/>
+  <link href="http://macrov.github.io/"/>
+  <updated>2013-04-25T00:55:43-07:00</updated>
+  <id>http://macrov.github.io/</id>
+  <author>
+    <name><![CDATA[Macrov Gao]]></name>
     
-      <h1 class="entry-title">Bitcoin论文中文版</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-
-
-<time datetime="2013-04-04T01:56:00-07:00" pubdate data-updated="true">Apr 4<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-<div class="entry-content"><h1>Bitcoin:A Peer-to-Peer Electronic Cash System</h1>
+  <entry>
+    <title type="html"><![CDATA[Bitcoin论文中文版]]></title>
+    <link href="http://macrov.github.io/blog/2013/04/04/bitcoinlun-wen-zhong-wen-ban/"/>
+    <updated>2013-04-04T01:56:00-07:00</updated>
+    <id>http://macrov.github.io/blog/2013/04/04/bitcoinlun-wen-zhong-wen-ban</id>
+    <content type="html"><![CDATA[<h1>Bitcoin:A Peer-to-Peer Electronic Cash System</h1>
 
 <h1>比特币:一个基于点对点技术的电子货币系统</h1>
 
@@ -104,7 +30,7 @@
 
 <p> 翻译:Macrov</p>
 
-<p><strong>Abstract.</strong>A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party to another without going through a financial institution. Digital signatures provide part of the solution, but the main benefits are lost if a trusted third party is still required to prevent double-spending.We propose a solution to the double-spending problem using a peer-to-peer network.The network timestamps transactions by hashing them into an ongoing chain of hash-based proof-of-work, forming a record that cannot be changed without redoing the proof-of-work. The longest chain not only serves as proof of the sequence of events witnessed, but proof that it came from the largest pool of CPU power. As long as a majority of CPU power is controlled by nodes that are not cooperating to attack the network, they&#8217;ll generate the longest chain and outpace attackers. The network itself requires minimal structure. Messages are broadcast on a best effort basis, and nodes can leave and rejoin the network at will, accepting the longest proof-of-work chain as proof of what happened while they were gone.</p>
+<p><strong>Abstract.</strong>A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party to another without going through a financial institution. Digital signatures provide part of the solution, but the main benefits are lost if a trusted third party is still required to prevent double-spending.We propose a solution to the double-spending problem using a peer-to-peer network.The network timestamps transactions by hashing them into an ongoing chain of hash-based proof-of-work, forming a record that cannot be changed without redoing the proof-of-work. The longest chain not only serves as proof of the sequence of events witnessed, but proof that it came from the largest pool of CPU power. As long as a majority of CPU power is controlled by nodes that are not cooperating to attack the network, they'll generate the longest chain and outpace attackers. The network itself requires minimal structure. Messages are broadcast on a best effort basis, and nodes can leave and rejoin the network at will, accepting the longest proof-of-work chain as proof of what happened while they were gone.</p>
 
 <p><strong>摘要。</strong>一个完全基于P2P技术的电子货币可以实现不依赖第三方金融机构进行货币交易。数字签名技术也可以实现直接交易，但是缺点是需要一个可信的第三方金融机构，用来保证每笔货币不会被重复消费。对于重复消费问题，我们提供了一种基于P2P网络的解决方案。这个货币系统通过把每一笔交易记录加入到一个不断演变的哈希工作量证明链中，来实现标记每一笔交易。这样生成的记录只有重新完成之前所有的工作量证明运算，才有可能被篡改。最长的证明链不仅表示它代表了对所有交易基于时序的记录，更证明了这个证明链是基于最大CPU计算能力池产生的。只要这个系统中大部分计算能力是被守法用户掌握，守法用户就会生成更长的证明链而保证不会被恶意用户攻击。这个系统的正常运作必须要有一定量的计算节点来保证。交易信息会被尽可能的广播出去，网络中的节点可以随时退出或者再次加入，只需要从新从网络中接受一份最长的证明链就可以保证与系统的同步。</p>
 
@@ -131,11 +57,11 @@
 
 <p>我们定义了一种电子货币，这种货币就是一个数字签名的链表。每一个所有者可以把现有的链表通过下一个收款方公钥通过哈希算法签名得到一个新块，然后把这个块添加到现有链表的尾部，最后传递给收款方，收款方可以通过这个签名来验证合法性。
 <img src="/images/myimage/bitcoin-papper/16-09-49.jpg" alt="Image Title" /><br/>
-The problem of course is the payee can&#8217;t verify that one of the owners did not double-spend the coin. A common solution is to introduce a trusted central authority, or mint, that checks every transaction for double spending. After each transaction, the coin must be returned to the mint to issue a new coin, and only coins issued directly from the mint are trusted not to be double-spent. The problem with this solution is that the fate of the entire money system depends on the company running the mint, with every transaction having to go through them, just like a bank.</p>
+The problem of course is the payee can't verify that one of the owners did not double-spend the coin. A common solution is to introduce a trusted central authority, or mint, that checks every transaction for double spending. After each transaction, the coin must be returned to the mint to issue a new coin, and only coins issued directly from the mint are trusted not to be double-spent. The problem with this solution is that the fate of the entire money system depends on the company running the mint, with every transaction having to go through them, just like a bank.</p>
 
 <p>问题很明显，收款方仍然不能确定付款方有没有重复消费这笔钱，通常的做法是引入一个可信的中心验证机构。这个机构负责检查所有的交易是否有重复消费。每一次交易后，货币必须回到这个中心验证机构确认没有问题后发行新的货币，只有直接来自这个中心验证机构的货币是可信的。这样的解决方案存在一个问题，就是整个货币系统都是依赖于经营这个中心验证机构的公司，每笔交易都需要通过这个机构，类似一个银行。</p>
 
-<p>  We need a way for the payee to know that the previous owners did not sign any earlier transactions. For our purposes, the earliest transaction is the one that counts, so we don&#8217;t care about later attempts to double-spend. The only way to confirm the absence of a transaction is to be aware of all transactions. In the mint based model, the mint was aware of all transactions and decided which arrived first. To accomplish this without a trusted party, transactions must be publicly announced [1], and we need a system for participants to agree on a single history of the order in which they were received. The payee needs proof that at the time of each transaction, the majority of nodes agreed it was the first received.</p>
+<p>  We need a way for the payee to know that the previous owners did not sign any earlier transactions. For our purposes, the earliest transaction is the one that counts, so we don't care about later attempts to double-spend. The only way to confirm the absence of a transaction is to be aware of all transactions. In the mint based model, the mint was aware of all transactions and decided which arrived first. To accomplish this without a trusted party, transactions must be publicly announced [1], and we need a system for participants to agree on a single history of the order in which they were received. The payee needs proof that at the time of each transaction, the majority of nodes agreed it was the first received.</p>
 
 <p>  我们需要一个方法让收款方能知道付款方在这次付款之前，没有再给这个链表签名然后传给别的人。为了这个目的，我们只关心第一次签名，其他的签名的都是非法的。确认一个交易是否有重复消费的唯一方式就是检索所有的交易，在之前的中心验证机构模型中，中心验证机构会知道所有的交易，并决定每一笔交易的先后顺序。为了能知道所有的交易并且不需要一个中心验证机构的目的，每一笔交易都要对整个系统进行广播，然后需要一个基于共识的、每个参与者都可以验证每笔交易先后顺序的系统。收款人需要网络中大部分节点都认为他的这次消费是第一次签名才表示这次交易有效。</p>
 
@@ -153,11 +79,11 @@ The problem of course is the payee can&#8217;t verify that one of the owners did
 
 <h2>4. 工作量证明</h2>
 
-<p>  To implement a distributed timestamp server on a peer-to-peer basis, we will need to use a proof-of-work system similar to Adam Back&#8217;s Hashcash [6], rather than newspaper or Usenet posts. The proof-of-work involves scanning for a value that when hashed, such as with SHA-256, the hash begins with a number of zero bits. The average work required is exponential in the number of zero bits required and can be verified by executing a single hash.</p>
+<p>  To implement a distributed timestamp server on a peer-to-peer basis, we will need to use a proof-of-work system similar to Adam Back's Hashcash [6], rather than newspaper or Usenet posts. The proof-of-work involves scanning for a value that when hashed, such as with SHA-256, the hash begins with a number of zero bits. The average work required is exponential in the number of zero bits required and can be verified by executing a single hash.</p>
 
 <p>  为了实现这个分布式的时间戳系统，我们使用了一个类似Adam Back哈希碰撞的工作量证明系统，而不是去报纸或者新闻组上刊登。工作量证明包括检测hash结果中的特定值，比如检测SHA_256的值，这个hash后的值要从一定数量的0比特位开始。平均工作量会随着0比特的数量呈指数增长，并且可以通过一个简单的hash算法来验证。</p>
 
-<p>  For our timestamp network, we implement the proof-of-work by incrementing a nonce in theblock until a value is found that gives the block&#8217;s hash the required zero bits. Once the CPU effort has been expended to make it satisfy the proof-of-work, the block cannot be changed without redoing the work. As later blocks are chained after it, the work to change the block would include redoing all the blocks after it.</p>
+<p>  For our timestamp network, we implement the proof-of-work by incrementing a nonce in theblock until a value is found that gives the block's hash the required zero bits. Once the CPU effort has been expended to make it satisfy the proof-of-work, the block cannot be changed without redoing the work. As later blocks are chained after it, the work to change the block would include redoing all the blocks after it.</p>
 
 <p>  对于这个时间戳系统的工作量证明，我们通过寻找一个可以让Block哈希值满足要求数量0比特的随机数来实现，这个随机数是可以增长的。一旦这个值被CPU通过计算尝试出来后，之后只有重做这个链表中所有Block的工作量证明后才可能被修改。</p>
 
@@ -167,7 +93,7 @@ The problem of course is the payee can&#8217;t verify that one of the owners did
 
 <p>  工作量证明的方式也解决了如何确定多数决策的问题。如果多数派的定义由IP地址数量决定的话，系统可能被拥有大量IP地址的人颠覆。而工作量证明实质上决定了是由CPU数量来决定多数派。多数派决策由链表的长度表现，最长的链表代表了消耗了最多的工作量。只要多数的CPU计算力由合法用户掌握，合法的链表就会以最快的速度增长，并超过所有竞争者。如果想篡改这个链表，攻击者就要从新计算这个链表的所有Block然后追上现在合法的链表。后面我们会展示攻击成功的几率会随着Block数量的增加成指数性的减小。</p>
 
-<p>  To compensate for increasing hardware speed and varying interest in running nodes over time,the proof-of-work difficulty is determined by a moving average targeting an average number of blocks per hour. If they&#8217;re generated too fast, the difficulty increases.
+<p>  To compensate for increasing hardware speed and varying interest in running nodes over time,the proof-of-work difficulty is determined by a moving average targeting an average number of blocks per hour. If they're generated too fast, the difficulty increases.
 为了配合不断增长的硬件速度与变化的节点运营利润(interest?)，工作量证明的难度会不断的调整。系统限制了每小时可以制作的Block平均数量，生产的太快难度就会上升，反之就会下降。</p>
 
 <h2>5. Network</h2>
@@ -231,13 +157,13 @@ chain, using the hash of the accepted block as the previous hash.</p>
 
 <h2>7. 磁盘空间释放</h2>
 
-<p>  Once the latest transaction in a coin is buried under enough blocks, the spent transactions before it can be discarded to save disk space. To facilitate this without breaking the block&#8217;s hash, transactions are hashed in a Merkle Tree [7][2][5], with only the root included in the block&#8217;s hash. Old blocks can then be compacted by stubbing off branches of the tree. The interior hashes do not need to be stored.</p>
+<p>  Once the latest transaction in a coin is buried under enough blocks, the spent transactions before it can be discarded to save disk space. To facilitate this without breaking the block's hash, transactions are hashed in a Merkle Tree [7][2][5], with only the root included in the block's hash. Old blocks can then be compacted by stubbing off branches of the tree. The interior hashes do not need to be stored.</p>
 
 <p>  一旦最新的交易被包含进Block后，这个交易的记录就可以被释放掉，以节省硬盘空间。为了不影响Block的哈希运算，交易记录被保存在一个哈希树中[7][2][5]，只有根记录保存在Block的header中。旧的Block可以通过删掉哈希树的左树来压缩。内部哈希结果也不需要再保存。</p>
 
 <p><img src="/images/myimage/bitcoin-papper/21-46-37.jpg" alt="Image Title" /></p>
 
-<p>  A block header with no transactions would be about 80 bytes. If we suppose blocks are generated every 10 minutes, 80 bytes * 6 * 24 * 365 = 4.2MB per year. With computer systems typically selling with 2GB of RAM as of 2008, and Moore&#8217;s Law predicting current growth of 1.2GB per year, storage should not be a problem even if the block headers must be kept in memory.</p>
+<p>  A block header with no transactions would be about 80 bytes. If we suppose blocks are generated every 10 minutes, 80 bytes * 6 * 24 * 365 = 4.2MB per year. With computer systems typically selling with 2GB of RAM as of 2008, and Moore's Law predicting current growth of 1.2GB per year, storage should not be a problem even if the block headers must be kept in memory.</p>
 
 <p>  一个Block的header如果没有交易记录的话大概是80字节大小。假设每十分钟产生一个新的Block，80字节 * 6(每小时) * 24(每天)
 * 365(每年) = 4.2兆字节。 按照2008年主流配置是2GB内存和考虑到摩尔定律大概内存会每年增长1.2GB，所以就算所有的Block Header都保存在内存应该也不是什么问题。</p>
@@ -246,13 +172,13 @@ chain, using the hash of the accepted block as the previous hash.</p>
 
 <h2>8. 交易确认的简化</h2>
 
-<p>  It is possible to verify payments without running a full network node. A user only needs to keep a copy of the block headers of the longest proof-of-work chain, which he can get by querying network nodes until he&#8217;s convinced he has the longest chain, and obtain the Merkle branch linking the transaction to the block it&#8217;s timestamped in. He can&#8217;t check the transaction for himself, but by linking it to a place in the chain, he can see that a network node has accepted it, and blocks added after it further confirm the network has accepted it.</p>
+<p>  It is possible to verify payments without running a full network node. A user only needs to keep a copy of the block headers of the longest proof-of-work chain, which he can get by querying network nodes until he's convinced he has the longest chain, and obtain the Merkle branch linking the transaction to the block it's timestamped in. He can't check the transaction for himself, but by linking it to a place in the chain, he can see that a network node has accepted it, and blocks added after it further confirm the network has accepted it.</p>
 
 <p>  一笔交易可以不传递到所有节点就得到确认。一个用户在他确定他手上的是最长链，并且得到一个包含这笔交易的哈希树之前，只需要保留一份最长链Block的header。这个用户无法自己验证交易的有效性，只能是通过把交易加入到交易链，并且看到包含这个交易链的Block被网络中的节点接受后才能验证。</p>
 
 <p><img src="/images/myimage/bitcoin-papper/22-11-28.jpg" alt="Image Title" /></p>
 
-<p>  As such, the verification is reliable as long as honest nodes control the network, but is more vulnerable if the network is overpowered by an attacker. While network nodes can verify transactions for themselves, the simplified method can be fooled by an attacker&#8217;s fabricated transactions for as long as the attacker can continue to overpower the network. One strategy to protect against this would be to accept alerts from network nodes when they detect an invalid block, prompting the user&#8217;s software to download the full block and alerted transactions to confirm the inconsistency. Businesses that receive frequent payments will probably still want to run their own nodes for more independent security and quicker verification.</p>
+<p>  As such, the verification is reliable as long as honest nodes control the network, but is more vulnerable if the network is overpowered by an attacker. While network nodes can verify transactions for themselves, the simplified method can be fooled by an attacker's fabricated transactions for as long as the attacker can continue to overpower the network. One strategy to protect against this would be to accept alerts from network nodes when they detect an invalid block, prompting the user's software to download the full block and alerted transactions to confirm the inconsistency. Businesses that receive frequent payments will probably still want to run their own nodes for more independent security and quicker verification.</p>
 
 <p>  这样来看，只要货币网络被守法节点控制，我们的验证方式就是可靠的。如果非法攻击者有比守法节点更强大的计算力，攻击者就可以一直伪造交易了。一种防范的策略是允许节点接受网络中其他节点发送的警报信息，警报信息会在节点发现非法Block时发出，用来提醒用户软件去下载完整的Block信息去验证这个异常。有频繁交易话也可以运行自己的节点达到更独立更准确的交易确认。</p>
 
@@ -262,10 +188,10 @@ chain, using the hash of the accepted block as the previous hash.</p>
 
 <p>  Although it would be possible to handle coins individually, it would be unwieldy to make a separate transaction for every cent in a transfer. To allow value to be split and combined, transactions contain multiple inputs and outputs. Normally there will be either a single input from a larger previous transaction or multiple inputs combining smaller amounts, and at most two outputs: one for the payment, and one returning the change, if any, back to the sender.</p>
 
-<p>  尽管对每一分钱都可以独立操作，但是真的一分钱一分钱的消费实在没必要。为了允许货币进行分割和合并，交易被设计成可有多个输入和输出组成。一般来讲输入可以是单独一个大额交易，或者是几个小的交易。而输出则最多有两个：一个是支付，一个是找零&#8212;会返还给支付者。
+<p>  尽管对每一分钱都可以独立操作，但是真的一分钱一分钱的消费实在没必要。为了允许货币进行分割和合并，交易被设计成可有多个输入和输出组成。一般来讲输入可以是单独一个大额交易，或者是几个小的交易。而输出则最多有两个：一个是支付，一个是找零---会返还给支付者。
 <img src="/images/myimage/bitcoin-papper/21-59-01.jpg" alt="Image Title" /></p>
 
-<p>  It should be noted that fan-out, where a transaction depends on several transactions, and those transactions depend on many more, is not a problem here. There is never the need to extract a complete standalone copy of a transaction&#8217;s history.</p>
+<p>  It should be noted that fan-out, where a transaction depends on several transactions, and those transactions depend on many more, is not a problem here. There is never the need to extract a complete standalone copy of a transaction's history.</p>
 
 <p>  对于一笔依赖于其它交易，而其它交易又依赖更多其它交易的现象，因为我们永远没有必要去提取出一笔交易的完整依赖关系，所以也就没有什么问题了。</p>
 
@@ -273,7 +199,7 @@ chain, using the hash of the accepted block as the previous hash.</p>
 
 <h2>10. 隐私</h2>
 
-<p>  The traditional banking model achieves a level of privacy by limiting access to information to the parties involved and the trusted third party. The necessity to announce all transactions publicly precludes this method, but privacy can still be maintained by breaking the flow of information in another place: by keeping public keys anonymous. The public can see that someone is sending an amount to someone else, but without information linking the transaction to anyone. This is similar to the level of information released by stock exchanges, where the time and size of individual trades, the &#8220;tape&#8221;, is made public, but without telling who the parties were.</p>
+<p>  The traditional banking model achieves a level of privacy by limiting access to information to the parties involved and the trusted third party. The necessity to announce all transactions publicly precludes this method, but privacy can still be maintained by breaking the flow of information in another place: by keeping public keys anonymous. The public can see that someone is sending an amount to someone else, but without information linking the transaction to anyone. This is similar to the level of information released by stock exchanges, where the time and size of individual trades, the "tape", is made public, but without telling who the parties were.</p>
 
 <p>  传统银行体系保管的隐私仍然会向政府和一些可信的第三方组织泄露。任何交易显然都不想被其他人监控，比特币通过匿名公钥的方式来实现这种隐私保障。每个人可以看到货币系统中有人给了另一个人一笔钱，但是具体的交易信息是只有交易双方知道的。方式有点类似股票交易，所有人知道股票交易的时间和数额，这些信息是公开的，但是，没有人会知道交易双方是谁。</p>
 
@@ -291,21 +217,21 @@ chain, using the hash of the accepted block as the previous hash.</p>
 
 <p>  我们有考虑有攻击者比守法节点更快的生成新链的情况，事实上就算攻击者成功超过守法节点的生成速度了也不会对货币造成什么严重的改变，例如凭空造钱或者拿走别人的钱。守法节点永远不会接受非法的交易，也不会接受包含它们的Block。攻击者只能试图把他近期花的钱拿回来。</p>
 
-<p>  The race between the honest chain and an attacker chain can be characterized as a Binomial Random Walk. The success event is the honest chain being extended by one block, increasing its lead by +1, and the failure event is the attacker&#8217;s chain being extended by one block, reducing the gap by -1.</p>
+<p>  The race between the honest chain and an attacker chain can be characterized as a Binomial Random Walk. The success event is the honest chain being extended by one block, increasing its lead by +1, and the failure event is the attacker's chain being extended by one block, reducing the gap by -1.</p>
 
 <p>  守法节点和非法攻击者之间的竞争关系可以用二叉树随机漫步（Binomial Random Walk）来描述，成功事件是合法的链被延长一个Block，失败事件是攻击者的非法链被延长了一个Block。</p>
 
-<p>  The probability of an attacker catching up from a given deficit is analogous to a Gambler&#8217;s Ruin problem. Suppose a gambler with unlimited credit starts at a deficit and plays potentially an infinite number of trials to try to reach breakeven. We can calculate the probability he ever reaches breakeven, or that an attacker ever catches up with the honest chain, as follows [8]:</p>
+<p>  The probability of an attacker catching up from a given deficit is analogous to a Gambler's Ruin problem. Suppose a gambler with unlimited credit starts at a deficit and plays potentially an infinite number of trials to try to reach breakeven. We can calculate the probability he ever reaches breakeven, or that an attacker ever catches up with the honest chain, as follows [8]:</p>
 
 <p>  攻击者追上合法链的可能性类似于赌徒破产问题。假设赌徒有无限的钱可以去尝试赌博并偿还他自己的亏空。我们可以计算赌徒补偿上亏空，既追上合法链的概率：</p>
 
 <p><img src="/images/myimage/bitcoin-papper/22-03-56.jpg" alt="Image Title" /></p>
 
-<p>  Given our assumption that p > q, the probability drops exponentially as the number of blocks the attacker has to catch up with increases. With the odds against him, if he doesn&#8217;t make a lucky lunge forward early on, his chances become vanishingly small as he falls further behind.</p>
+<p>  Given our assumption that p > q, the probability drops exponentially as the number of blocks the attacker has to catch up with increases. With the odds against him, if he doesn't make a lucky lunge forward early on, his chances become vanishingly small as he falls further behind.</p>
 
 <p>  假设p>p，赌徒补上亏空的概率会随着之间相差Block数量的增长成指数的下降。所以对于攻击者的成功几率，除非他开始走大运迅速追上合法链，否则随着合法链的不断延长，攻击者成功的几率就越来越小了。</p>
 
-<p>  We now consider how long the recipient of a new transaction needs to wait before being sufficiently certain the sender can&#8217;t change the transaction. We assume the sender is an attacker who wants to make the recipient believe he paid him for a while, then switch it to pay back to himself after some time has passed. The receiver will be alerted when that happens, but the sender hopes it will be too late.</p>
+<p>  We now consider how long the recipient of a new transaction needs to wait before being sufficiently certain the sender can't change the transaction. We assume the sender is an attacker who wants to make the recipient believe he paid him for a while, then switch it to pay back to himself after some time has passed. The receiver will be alerted when that happens, but the sender hopes it will be too late.</p>
 
 <p>  现在我们来讨论下收款人要多久才能肯定得认为付款是有效的。假设付款人是一个攻击者，试图让收款人认为他成功付款后再让钱回到自己钱包。收款人发现这个付款人这样做后，会马上发出非法交易的警报，但是攻击者希望这时他已经成功拿回了他付出去的钱。</p>
 
@@ -313,7 +239,7 @@ chain, using the hash of the accepted block as the previous hash.</p>
 
 <p>  收款人会生成一对新密钥，然后把公钥交给付款人用来签名，这样可以防止攻击者有预谋的提前计算出很多Block使非法链长度在一定程度上领先于守法用户，当交易发生后，攻击者把篡改后的交易加到自己提前算好的Block链中使其他节点认为他的链是正确的。</p>
 
-<p>  The recipient waits until the transaction has been added to a block and z blocks have been linked after it. He doesn&#8217;t know the exact amount of progress the attacker has made, but assuming the honest blocks took the average expected time per block, the attacker&#8217;s potential progress will be a Poisson distribution with expected value:</p>
+<p>  The recipient waits until the transaction has been added to a block and z blocks have been linked after it. He doesn't know the exact amount of progress the attacker has made, but assuming the honest blocks took the average expected time per block, the attacker's potential progress will be a Poisson distribution with expected value:</p>
 
 <p>  收款人在交易被加入到一个Block并且之后有z个Block前一直等待，收款人不知道攻击者已经计算出了多少Block，只能认为守法节点按照平均速度去计算每一个Block，攻击者计算Block的进度可能性否和泊松分布：</p>
 
@@ -324,56 +250,41 @@ chain, using the hash of the accepted block as the previous hash.</p>
 <p>  为了得出攻击者赶上的概率，我们给攻击者可能的计算概率都乘上泊松密度：
 <img src="/images/myimage/bitcoin-papper/22-06-38.jpg" alt="Image Title" /></p>
 
-<p>  Rearranging to avoid summing the infinite tail of the distribution&#8230;</p>
+<p>  Rearranging to avoid summing the infinite tail of the distribution...</p>
 
 <p>  然后重排下公式，消除无穷大。
 <img src="/images/myimage/bitcoin-papper/22-06-54.jpg" alt="Image Title" /></p>
 
-<p>  Converting to C code&#8230;</p>
+<p>  Converting to C code...</p>
 
-<p>  C代码下的实现&#8230;</p>
+<p>  C代码下的实现...
+```</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>#include &lt;math.h&gt;
-</span><span class='line'>double AttackerSuccessProbability(double q, int z)
-</span><span class='line'>{
-</span><span class='line'>double p = 1.0 - q;
-</span><span class='line'>double lambda = z * (q / p);
-</span><span class='line'>double sum = 1.0;
-</span><span class='line'>int i, k;
-</span><span class='line'>for (k = 0; k &lt;= z; k++)
-</span><span class='line'>{
-</span><span class='line'>double poisson = exp(-lambda);
-</span><span class='line'>for (i = 1; i &lt;= k; i++)
-</span><span class='line'>poisson *= lambda / i;
-</span><span class='line'>sum -= poisson * (1 - pow(q / p, z - k));
-</span><span class='line'>}
-</span><span class='line'>return sum;
-</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+<h1>include &lt;math.h></h1>
 
-
-<p>  Running some results, we can see the probability drop off exponentially with z.</p>
+<p>double AttackerSuccessProbability(double q, int z)
+{
+double p = 1.0 - q;
+double lambda = z * (q / p);
+double sum = 1.0;
+int i, k;
+for (k = 0; k &lt;= z; k++)
+{
+double poisson = exp(-lambda);
+for (i = 1; i &lt;= k; i++)
+poisson *= lambda / i;
+sum -= poisson * (1 - pow(q / p, z - k));
+}
+return sum;
+}
+```
+  Running some results, we can see the probability drop off exponentially with z.</p>
 
 <p>  通过计算，可以看出攻击者追上的概率会随着Z的增长呈指数下降。
 <img src="/images/myimage/bitcoin-papper/22-08-37.jpg" alt="Image Title" /><br/>
-  Solving for P less than 0.1%&#8230;</p>
+  Solving for P less than 0.1%...</p>
 
-<p>  然后看下概率小于0.1%要满足的条件&#8230;
+<p>  然后看下概率小于0.1%要满足的条件...
 <img src="/images/myimage/bitcoin-papper/22-08-52.jpg" alt="Image Title" /></p>
 
 <h2>12. Conclusion</h2>
@@ -381,132 +292,7 @@ chain, using the hash of the accepted block as the previous hash.</p>
 <h2>12. 结论</h2>
 
 <p>  We have proposed a system for electronic transactions without relying on trust. We started with the usual framework of coins made from digital signatures, which provides strong control of ownership, but is incomplete without a way to prevent double-spending. To solve this, we proposed a peer-to-peer network using proof-of-work to recor</p>
-</div>
-
-
-  <footer>
-    <p class="meta">
-      
+]]></content>
+  </entry>
   
-
-<span class="byline author vcard">Posted by <span class="fn">Macrov Gao</span></span>
-
-      
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-04-04T01:56:00-07:00" pubdate data-updated="true">Apr 4<span>th</span>, 2013</time>
-      
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/bitcoin/'>Bitcoin</a>
-  
-</span>
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://macrov.github.io/blog/2013/04/04/bitcoinlun-wen-zhong-wen-ban/" data-via="" data-counturl="http://macrov.github.io/blog/2013/04/04/bitcoinlun-wen-zhong-wen-ban/" >Tweet</a>
-  
-  
-  
-</div>
-
-    
-    <p class="meta">
-      
-      
-        <a class="basic-alignment right" href="/blog/2013/04/24/back-to-octopress/" title="Next Post: Back To Octopress">Back To Octopress &raquo;</a>
-      
-    </p>
-  </footer>
-</article>
-
-</div>
-
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2013/04/24/octopressji-ben-ding-zhi/">Octopress基本定制</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/04/24/octopresshuan-jing-pei-zhi-ubuntu12-dot-04/">Octopress环境配置 Ubuntu12.04</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/04/24/back-to-octopress/">Back To Octopress</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/04/04/bitcoinlun-wen-zhong-wen-ban/">Bitcoin论文中文版</a>
-      </li>
-    
-  </ul>
-</section>
-<section>
-<h1>Categories</h1>
-<ul id="categories">
-    <li class='category'><a href='/blog/categories/bitcoin/'>Bitcoin (1)</a></li>
-<li class='category'><a href='/blog/categories/octopress/'>Octopress (2)</a></li>
-
-</ul>
-</section>
-
-
-
-
-
-
-
-  
-</aside>
-
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2013 - Macrov Gao -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-
-
-
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-</body>
-</html>
+</feed>

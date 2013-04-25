@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Octopress | Macrov's Blog]]></title>
+  <link href="http://macrov.github.io/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://macrov.github.io/"/>
+  <updated>2013-04-25T00:55:43-07:00</updated>
+  <id>http://macrov.github.io/</id>
+  <author>
+    <name><![CDATA[Macrov Gao]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress基本定制]]></title>
+    <link href="http://macrov.github.io/blog/2013/04/24/octopressji-ben-ding-zhi/"/>
+    <updated>2013-04-24T22:19:00-07:00</updated>
+    <id>http://macrov.github.io/blog/2013/04/24/octopressji-ben-ding-zhi</id>
+    <content type="html"><![CDATA[<p>Octopress的配置还是非常简单的，首先是建议简单阅读下官方文档<a href="http://octopress.org/docs/configuring/">点我</a>。</p>
+
+<p>（这块不得不说gedit这个gnome环境基本的编辑器做的还是相当不错的。竟然支持部分markdown语法高亮。。。）</p>
+
+<p>所有的配置都包含在这4个文件中:
+<code>
+_config.yml       # Main config (Jekyll's settings) 主配置文件，网站相关的配置基本都在这个文件
+Rakefile          # Configs for deployment 部署配置文件
+config.rb         # Compass config 不懂。。。
+config.ru         # Rack config 不懂。。。
+</code></p>
+
+<p>总之你基本上只会用的第一个。然后看下里面基本的选项：
+```
+root:               # Mapping for relative urls (default: /) 相对路径的根路径位置
+permalink:          # Permalink structure for blog posts  blog前缀规则
+source:             # Directory for site source files blog存放的目录
+destination:        # Directory for generated site files 站点文件路径
+plugins:            # Directory for Jekyll plugins 插件路径
+code_dir:           # Directory for code snippets (for include_code plugin) code路径
+category_dir:       # Directory for generated blog category pages 目录页路径</p>
+
+<p>pygments:           # Toggle python pygments syntax highlighting
+paginate:           # Posts per page on the blog index
+pagination_dir:     # Directory base for pagination URLs eg. /blog/page/2/
+recent_posts:       # Number of recent posts to appear in the sidebar</p>
+
+<p>default_asides:     # Configure what shows up in the sidebar and in what order
+blog_index_asides:  # Optional sidebar config for blog index page
+post_asides:        # Optional sidebar config for post layout
+page_asides:        # Optional sidebar config for page layout</p>
+
+<p>```
+基本上不用动，了解一下。</p>
+
+<p>然后是网站名等一些必改的配置项。
+<code>
+url: http://macrov.github.io
+title: 网站title
+subtitle: 次标题
+author: 你的名字
+simple_search: http://google.com/search
+description: 简单描述
+</code></p>
+
+<p>然后就是一些三方服务的嵌入了，如twiiter，G+等。这些也放到单独的文章中。</p>
+
+<h4>增加about页面。</h4>
+
+<p>应该是Jekyll的规则，/blog/archives这样的链接就会链接到你网站http://your_username.github.com/blog/archives/index.html。
+所以我们要添加一个about的界面就在source下建立一个about目录，然后在下面建立一个/about/index.html或者index.markdown文件。
+然后再里面编辑我们需要的内容。</p>
+
+<p>实际上不需要你手动去建立这些目录，直接执行
+<code>
+rake new_page["about"]
+</code>
+就会执行上面的操作。
+然后编辑source/about/index.markdown文件。</p>
+
+<p>最后是在导航栏加上我们的新页面，编辑source/_includes/custom/navigation.html文件
+修改成如下样式：
+```</p>
+
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About Me</a></li>  //这行就是我们增加的链接
+</ul>
+
+
+<p>```
+然后rake generate, rake preview查看效果，okey后deploy就可以了。</p>
+
+<h4>增加tag列表到侧边栏</h4>
+
+<p>增加文件plugin/category_list.rb如下：
+```
+module Jekyll
+  class CategoryListTag &lt; Liquid::Tag</p>
+
+<pre><code>def render(context)
+  html = ""
+  categories = context.registers[:site].categories.keys
+  categories.sort.each do |category|
+    posts_in_category = context.registers[:site].categories[category].size
+    category_dir = context.registers[:site].config['category_dir']
+    category_url = File.join(category_dir, category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase)
+    html &lt;&lt; "&lt;li class='category'&gt;&lt;a href='http://macrov.github.io/#{category_url}/'&gt;#{category} (#{posts_in_category})&lt;/a&gt;&lt;/li&gt;\n"
+  end
+  html
+end
+</code></pre>
+
+<p>  end
+end</p>
+
+<p>Liquid::Template.register_tag('category_list', Jekyll::CategoryListTag)
+<code>
+增加文件source/_includes/asides/category_list.html，内容如下：
+</code>
+<section>
+  <h1>Categories</h1>
+  <ul id="categories"></p>
+
+<pre><code><li class='category'><a href='/blog/categories/bitcoin/'>Bitcoin (1)</a></li>
+<li class='category'><a href='/blog/categories/octopress/'>Octopress (2)</a></li>
+
+</code></pre>
+
+<p>  </ul>
+</section>
+<code>
+修改_config.yml文件，把我们新建的category_list.html加入到侧边栏:
+</code>
+default_asides: [asides/recent_posts.html, asides/category_list.html]
+<code>
+付:每篇文章的categories:后边跟tag名,如：
+</code></p>
+
+<h1>One category</h1>
+
+<p>categories: Sass</p>
+
+<h1>Multiple categories example 1</h1>
+
+<p>categories: [CSS3, Sass, Media Queries]</p>
+
+<h1>Multiple categories example 2</h1>
+
+<p>categories:
+- CSS3
+- Sass
+- Media Queries</p>
+
+<p>```</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress环境配置 Ubuntu12.04]]></title>
+    <link href="http://macrov.github.io/blog/2013/04/24/octopresshuan-jing-pei-zhi-ubuntu12-dot-04/"/>
+    <updated>2013-04-24T07:57:00-07:00</updated>
+    <id>http://macrov.github.io/blog/2013/04/24/octopresshuan-jing-pei-zhi-ubuntu12-dot-04</id>
+    <content type="html"><![CDATA[<p><strong>Octopress</strong>环境配置起来实在是麻烦，估计是不熟悉ruby环境的原因。</p>
+
+<p>目前没碰到一个可以从头跟到尾就可以使用的教程。所以还是自己写一遍顺便整理下。</p>
+
+<h4>1.安装</h4>
+
+<p><strong>基本软件包，包括git还有一些基本的编译环境。</strong>
+<code>
+sudo apt-get update
+sudo apt-get install bash curl git-core -y
+sudo apt-get install build-essential bison openssl libreadline6 libreadline6-dev zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake rvm install 1.9.2 -C --with-iconv-dir=$HOME/.rvm/usr -y
+</code>
+<strong>安装rvm</strong>
+<code>
+bash -s stable &lt; &lt;(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
+</code></p>
+
+<p><strong>使rvm成为function</strong>
+<code>
+echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] &amp;&amp; . "$HOME/.rvm/scripts/rvm" # Load RVM function' &gt;&gt; ~/.bashrc
+source .bashrc
+</code></p>
+
+<!-- more -->
+
+
+<p><strong>安装octopress环境</strong>
+<code>
+rvm pkg install openssl
+rvm pkg install iconv
+rvm install ruby-1.9.3-p392 -C --with-iconv-dir=$HOME/.rvm/usr
+rvm use 1.9.3 --default
+rvm reload
+rvm rubygems latest
+gem install bundler
+</code></p>
+
+<p><strong>下载octopress</strong>
+```
+git clone git://github.com/imathis/octopress.git octopress</p>
+
+<p><code>
+进入octopress文件夹后提示
+</code>
+You are using '.rvmrc', it requires trusting, it is slower and it is not compatible with other ruby managers,
+you can switch to '.ruby-version' using 'rvm rvmrc to [.]ruby-version'
+or ignore this warnings with 'rvm rvmrc warning ignore /home/macrov/octopress/.rvmrc',
+'.rvmrc' will continue to be the default project file in RVM 1 and RVM 2,
+to ignore the warning for all files run 'rvm rvmrc warning ignore all.rvmrcs'.</p>
+
+<hr />
+
+<ul>
+<li>NOTICE                                                                       *</li>
+</ul>
+
+
+<hr />
+
+<ul>
+<li>RVM has encountered a new or modified .rvmrc file in the current directory,  *</li>
+<li>this is a shell script and therefore may contain any shell commands.         *</li>
+<li><pre><code>                                                                       *
+</code></pre></li>
+<li>Examine the contents of this file carefully to be sure the contents are      *</li>
+<li>safe before trusting it!                                                     *</li>
+<li>Do you wish to trust '/home/macrov/octopress/.rvmrc'?                        *</li>
+<li>Choose v[iew] below to view the contents                                     *</li>
+</ul>
+
+
+<hr />
+
+<p>y[es], n[o], v[iew], c[ancel]>
+```
+输入y回车。</p>
+
+<p>安装octopress环境
+<code>
+gem install bundler
+bundle install
+</code></p>
+
+<p>安装octopress默认主题。
+<code>
+rake install
+</code></p>
+
+<h4>2.写作</h4>
+
+<p>添加新文章
+<code>
+rake new_post["title"]
+</code>
+然后编写、生成、预览。
+<code>
+rake generate
+rake preview
+</code>
+预览会启动一个webserver，可以打开浏览器，地址栏输入localhost:4000查看你的blog。</p>
+
+<p>写做里面会有很多小技巧，单独写一篇。</p>
+
+<h4>3.部署</h4>
+
+<p>现在开始部署到github pages上。
+输入
+<code>
+rake setup_github_pages
+</code>
+按照提示输入你的github pages仓库地址，比如我的：
+不知道是不是我的比较早，名字还是com结尾，现在都已经转到.io域名，但没试过用io能不能找到仓库。
+<code>
+Enter the read/write url for your repository
+(For example, 'git@github.com:your_username/your_username.github.io)
+Repository url: 'git@github.com:macrov/macrov.github.com
+</code>
+这里需要你自己把ssh的密钥对配置好，并且把公玥正确粘贴到github上。</p>
+
+<p>然后运行
+<code>
+rake deploy
+</code>
+就会push到你github的pages仓库上。</p>
+
+<p>你就可以用yourname.github.com访问你的博客了。</p>
+
+<h4>4.环境保存</h4>
+
+<p>github pages会使用master分支中的文件当作网站内容，然后octopress是工作在source分支，你的文章和部署的主题都保存在source文件夹，这些东西要保存好，以便以后多个设备编辑或者换环境。不参与octopress开发就直接保存在source分支然后一起push到github。</p>
+
+<p>不保存好原稿你以后可能会很痛苦，所以这部一定要做。
+（我就是中间段了好久，工作也换了，电脑环境也没有了，因为没有保存原稿，想重新开始写就要费很大力气把以前的文章从html再导成markdown，最后我放弃，然后以前的文章就都没了。）</p>
+
+<p><code>
+git add .
+git commit -m "init commit"
+git push
+</code></p>
+
+<h4>5.维护已经存在的octopress</h4>
+
+<p>参考步骤1搭建需要的环境。</p>
+
+<p>clone你之前的github pages仓库
+<code>
+git clone git@github/your_username/your_username.github.com
+cd your_username.github.com
+git checkout source
+bash //加载rvm
+rake setup_github_pages
+</code>
+然后就可以重新rake new_post, rake generate, rake deploy了。（前提是你有按照环境保存把原稿都加到仓库里）</p>
+]]></content>
+  </entry>
+  
+</feed>
