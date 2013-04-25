@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | Macrov's Blog]]></title>
   <link href="http://macrov.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://macrov.github.io/"/>
-  <updated>2013-04-25T00:59:53-07:00</updated>
+  <updated>2013-04-25T01:28:27-07:00</updated>
   <id>http://macrov.github.io/</id>
   <author>
     <name><![CDATA[Macrov Gao]]></name>
@@ -157,6 +157,18 @@ default_asides: [asides/recent_posts.html, asides/category_list.html]
 - Media Queries</p>
 
 <p>```</p>
+
+<h4>增加评论功能</h4>
+
+<p>Octporess默认使用的是disqus，一个国外的评论平台。貌似还可以植入广告给你赚点钱。
+然后有人说这个国内访问比较问，有移植多问的，可以搜一下。
+先去<a href="http://disqus.com/">disqus</a>注册你的网站，记住shortname。
+然后编辑_config.yml文件。
+找到disqus配置然后输入你网站的shortname，然后把disqus_show_comment_count: 改成true。这样默认就开启评论了，不想默认开启评论就置成false，然后在文章的header加comment: true.
+<code>
+disqus_short_name: shortname
+disqus_show_comment_count: true
+</code></p>
 ]]></content>
   </entry>
   

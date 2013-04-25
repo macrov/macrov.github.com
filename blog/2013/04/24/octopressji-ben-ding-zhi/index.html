@@ -91,6 +91,8 @@ _config.yml # Main config &hellip;">
 
 <time datetime="2013-04-24T22:19:00-07:00" pubdate data-updated="true">Apr 24<span>th</span>, 2013</time>
         
+         | <a href="#disqus_thread">Comments</a>
+        
       </p>
     
   </header>
@@ -300,6 +302,20 @@ _config.yml # Main config &hellip;">
 </span></code></pre></td></tr></table></div></figure>
 
 
+<h4>增加评论功能</h4>
+
+<p>Octporess默认使用的是disqus，一个国外的评论平台。貌似还可以植入广告给你赚点钱。
+然后有人说这个国内访问比较问，有移植多问的，可以搜一下。
+先去<a href="http://disqus.com/">disqus</a>注册你的网站，记住shortname。
+然后编辑_config.yml文件。
+找到disqus配置然后输入你网站的shortname，然后把disqus_show_comment_count: 改成true。这样默认就开启评论了，不想默认开启评论就置成false，然后在文章的header加comment: true.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>disqus_short_name: shortname
+</span><span class='line'>disqus_show_comment_count: true</span></code></pre></td></tr></table></div></figure>
+
+
 
 </div>
 
@@ -352,6 +368,12 @@ _config.yml # Main config &hellip;">
     </p>
   </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -407,6 +429,22 @@ _config.yml # Main config &hellip;">
 
 </footer>
   
+
+<script type="text/javascript">
+      var disqus_shortname = 'macrovsblog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://macrov.github.io/blog/2013/04/24/octopressji-ben-ding-zhi/';
+        var disqus_url = 'http://macrov.github.io/blog/2013/04/24/octopressji-ben-ding-zhi/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
 
 
 
