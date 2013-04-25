@@ -4,7 +4,7 @@
   <title><![CDATA[Macrov's Blog]]></title>
   <link href="http://macrov.github.io/atom.xml" rel="self"/>
   <link href="http://macrov.github.io/"/>
-  <updated>2013-04-25T00:55:43-07:00</updated>
+  <updated>2013-04-25T00:57:54-07:00</updated>
   <id>http://macrov.github.io/</id>
   <author>
     <name><![CDATA[Macrov Gao]]></name>
@@ -32,6 +32,11 @@
 </span><span class='line'>Rakefile          # Configs for deployment 部署配置文件
 </span><span class='line'>config.rb         # Compass config 不懂。。。
 </span><span class='line'>config.ru         # Rack config 不懂。。。</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<!-- more -->
 
 
 <p>总之你基本上只会用的第一个。然后看下里面基本的选项：</p>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | Macrov's Blog]]></title>
   <link href="http://macrov.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://macrov.github.io/"/>
-  <updated>2013-04-25T00:55:43-07:00</updated>
+  <updated>2013-04-25T00:57:54-07:00</updated>
   <id>http://macrov.github.io/</id>
   <author>
     <name><![CDATA[Macrov Gao]]></name>
@@ -29,6 +29,9 @@ Rakefile          # Configs for deployment 部署配置文件
 config.rb         # Compass config 不懂。。。
 config.ru         # Rack config 不懂。。。
 </code></p>
+
+<!-- more -->
+
 
 <p>总之你基本上只会用的第一个。然后看下里面基本的选项：
 ```
