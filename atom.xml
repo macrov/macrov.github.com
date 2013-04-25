@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Macrov's Blog]]></title>
   <link href="http://macrov.github.io/atom.xml" rel="self"/>
   <link href="http://macrov.github.io/"/>
-  <updated>2013-04-24T22:18:49-07:00</updated>
+  <updated>2013-04-24T22:58:30-07:00</updated>
   <id>http://macrov.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Macrov Gao]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress基本定制]]></title>
+    <link href="http://macrov.github.io/blog/2013/04/24/octopressji-ben-ding-zhi/"/>
+    <updated>2013-04-24T22:19:00-07:00</updated>
+    <id>http://macrov.github.io/blog/2013/04/24/octopressji-ben-ding-zhi</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Octopress环境配置 Ubuntu12.04]]></title>
