@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://macrov.github.io/atom.xml" rel="self"/>
   <link href="http://macrov.github.io/"/>
-  <updated>2013-04-24T22:15:24-07:00</updated>
+  <updated>2013-04-24T22:18:49-07:00</updated>
   <id>http://macrov.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -46,6 +46,9 @@
 <span class='line-number'>2</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function' &gt;&gt; ~/.bashrc
 </span><span class='line'>source .bashrc</span></code></pre></td></tr></table></div></figure>
+
+
+<!-- more -->
 
 
 <p><strong>安装octopress环境</strong></p>
@@ -197,6 +200,8 @@
 
 
 <h4>5.维护已经存在的octopress</h4>
+
+<p>参考步骤1搭建需要的环境。</p>
 
 <p>clone你之前的github pages仓库</p>
 
