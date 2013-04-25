@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>My Octopress Blog</title>
+  <title>Octopress环境配置 Ubuntu12.04 - My Octopress Blog</title>
   <meta name="author" content="Your Name">
 
   
@@ -22,7 +22,7 @@ sudo apt-get &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://macrov.github.io">
+  <link rel="canonical" href="http://macrov.github.io/blog/2013/04/24/octopresshuan-jing-pei-zhi-ubuntu12-dot-04">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
@@ -67,15 +67,12 @@ sudo apt-get &hellip;">
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/04/24/octopresshuan-jing-pei-zhi-ubuntu12-dot-04/">Octopress环境配置 Ubuntu12.04</a></h1>
+      <h1 class="entry-title">Octopress环境配置 Ubuntu12.04</h1>
     
     
       <p class="meta">
@@ -98,7 +95,7 @@ sudo apt-get &hellip;">
   </header>
 
 
-  <div class="entry-content"><p><strong>Octopress</strong>环境配置起来实在是麻烦，估计是不熟悉ruby环境的原因。</p>
+<div class="entry-content"><p><strong>Octopress</strong>环境配置起来实在是麻烦，估计是不熟悉ruby环境的原因。</p>
 
 <p>目前没碰到一个可以从头跟到尾就可以使用的教程。所以还是自己写一遍顺便整理下。</p>
 
@@ -292,64 +289,16 @@ sudo apt-get &hellip;">
 
 <p>然后就可以重新rake new_post, rake generate, rake deploy了。（前提是你有按照环境保存把原稿都加到仓库里）</p>
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/04/24/back-to-octopress/">Back to Octopress</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
 
+<span class="byline author vcard">Posted by <span class="fn">Your Name</span></span>
 
-<time datetime="2013-04-24T00:48:00-07:00" pubdate data-updated="true">Apr 24<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>重回Octopress.</p>
-
-<p>中间遭遇了非常恶心的utf编码问题，后来发现竟然是vi的配置问题。</p>
-
-<p>之前文章也没救过来，算了，就是有点舍不得那篇移植bootchart到Android的文章。还是废了不少功夫的。</p>
-
-<p>多少还是有点怀念farbox的简洁。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/04/04/bitcoinlun-wen-zhong-wen-ban/">Bitcoin论文中文版</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
@@ -361,46 +310,32 @@ sudo apt-get &hellip;">
   
 
 
-<time datetime="2013-04-04T01:56:00-07:00" pubdate data-updated="true">Apr 4<span>th</span>, 2013</time>
-        
-      </p>
+<time datetime="2013-04-24T07:57:00-07:00" pubdate data-updated="true">Apr 24<span>th</span>, 2013</time>
+      
+
+
+    </p>
     
-  </header>
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://macrov.github.io/blog/2013/04/24/octopresshuan-jing-pei-zhi-ubuntu12-dot-04/" data-via="" data-counturl="http://macrov.github.io/blog/2013/04/24/octopresshuan-jing-pei-zhi-ubuntu12-dot-04/" >Tweet</a>
+  
+  
+  
+</div>
 
-
-  <div class="entry-content"><h1>Bitcoin:A Peer-to-Peer Electronic Cash System</h1>
-
-<h1>比特币:一个基于点对点技术的电子货币系统</h1>
-
-<p> Satoshi Nakamoto</p>
-
-<p> satoshin@gmx.com</p>
-
-<p> www.bitcoin.org</p>
-
-<p> 翻译:Macrov</p>
-
-<p><strong>Abstract.</strong>A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party to another without going through a financial institution. Digital signatures provide part of the solution, but the main benefits are lost if a trusted third party is still required to prevent double-spending.We propose a solution to the double-spending problem using a peer-to-peer network.The network timestamps transactions by hashing them into an ongoing chain of hash-based proof-of-work, forming a record that cannot be changed without redoing the proof-of-work. The longest chain not only serves as proof of the sequence of events witnessed, but proof that it came from the largest pool of CPU power. As long as a majority of CPU power is controlled by nodes that are not cooperating to attack the network, they&#8217;ll generate the longest chain and outpace attackers. The network itself requires minimal structure. Messages are broadcast on a best effort basis, and nodes can leave and rejoin the network at will, accepting the longest proof-of-work chain as proof of what happened while they were gone.</p>
-
-<p><strong>摘要。</strong>一个完全基于P2P技术的电子货币可以实现不依赖第三方金融机构进行货币交易。数字签名技术也可以实现直接交易，但是缺点是需要一个可信的第三方金融机构，用来保证每笔货币不会被重复消费。对于重复消费问题，我们提供了一种基于P2P网络的解决方案。这个货币系统通过把每一笔交易记录加入到一个不断演变的哈希工作量证明链中，来实现标记每一笔交易。这样生成的记录只有重新完成之前所有的工作量证明运算，才有可能被篡改。最长的证明链不仅表示它代表了对所有交易基于时序的记录，更证明了这个证明链是基于最大CPU计算能力池产生的。只要这个系统中大部分计算能力是被守法用户掌握，守法用户就会生成更长的证明链而保证不会被恶意用户攻击。这个系统的正常运作必须要有一定量的计算节点来保证。交易信息会被尽可能的广播出去，网络中的节点可以随时退出或者再次加入，只需要从新从网络中接受一份最长的证明链就可以保证与系统的同步。</p>
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/04/24/back-to-octopress/" title="Previous Post: Back To Octopress">&laquo; Back To Octopress</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/04/04/bitcoinlun-wen-zhong-wen-ban/">Read on &rarr;</a>
-    </footer>
-  
 
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
 <aside class="sidebar">
   
     <section>
@@ -428,6 +363,7 @@ sudo apt-get &hellip;">
 
   
 </aside>
+
 
     </div>
   </div>
