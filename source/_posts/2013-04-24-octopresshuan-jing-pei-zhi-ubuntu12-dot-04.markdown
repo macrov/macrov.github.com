@@ -3,7 +3,7 @@ layout: post
 title: "Octopress环境配置 Ubuntu12.04"
 date: 2013-04-24 07:57
 comments: true
-categories: 
+categories: Octopress
 ---
 
 **Octopress**环境配置起来实在是麻烦，估计是不熟悉ruby环境的原因。
@@ -30,7 +30,7 @@ bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscr
 echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function' >> ~/.bashrc
 source .bashrc
 ```
-
+<!-- more -->
 **安装octopress环境**
 ```
 rvm pkg install openssl
@@ -136,6 +136,7 @@ git push
 
 
 ####5.维护已经存在的octopress
+参考步骤1搭建需要的环境。
 
 clone你之前的github pages仓库
 ```
@@ -143,6 +144,7 @@ git clone git@github/your_username/your_username.github.com
 cd your_username.github.com
 git checkout source
 bash //加载rvm
+rake setup_github_pages
 ```
 然后就可以重新rake new_post, rake generate, rake deploy了。（前提是你有按照环境保存把原稿都加到仓库里）
 

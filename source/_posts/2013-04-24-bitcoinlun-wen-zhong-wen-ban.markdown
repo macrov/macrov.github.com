@@ -3,7 +3,7 @@ layout: post
 title: "Bitcoin论文中文版"
 date: 2013-04-04 01:56
 comments: true
-categories: 
+categories: Bitcoin
 ---
 
 
